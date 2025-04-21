@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ammar's personal website</title>
+</head>
+<body>
+    <nav align="center">
+        <a href="home.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="blog.html">Blog</a>
+    </nav>
+
+    <form action="contact.php" method="post">
+        <fieldset>
+            <legend>Contact</legend>
+            <p>
+                <label for="nama">Name:</label> <br>
+                <input type="text" name="name" id="nama" placeholder="nama anda...">
+            </p>
+
+            <p>
+                <label for="pesan">Subject:</label> <br>
+                <textarea name="subject" id="pesan" placeholder="pesan anda..."></textarea>
+            </p>
+
+            <p>
+                <label for="email">Email:</label> <br>
+                <input type="email" name="email" id="email" placeholder="email anda...">
+            </p>
+            <br>
+            <p>
+                <input type="submit" name="kirim" value="kirim">
+            </p>
+        </fieldset>
+    </form>
+    
+    <footer align="center">
+        <p>Copyright &copy; Ammar 2025</p>
+    </footer>
+</body>
+</html>

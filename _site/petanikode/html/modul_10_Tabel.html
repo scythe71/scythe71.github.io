@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Tabel</title>
+</head>
+<body>
+    <h2>Tabel 1:</h2>
+    <!-- "table" untuk membuat tabel di web -->
+    <table border="1" cellpadding="10"> <!-- border ukuran garis. cellpadding jarak antara text dan garis -->
+        <tr> <!-- tr untuk membuat baris. td untuk membuat sel -->
+            <!-- bgcolor untuk memberi warna pada sel atau baris -->
+            <td bgcolor="yellow">Baris 1 Kolom 1</td> <!-- bgcolor pada td (sel) hanya untuk sel-->
+            <td>Baris 1 Kolom 2</td>
+        </tr>
+        <tr bgcolor="#00ff80"> <!-- bgcolor pada tr (baris) untuk satu baris-->
+            <td>Baris 2 Kolom 1</td>
+            <td>Baris 2 Kolom 2</td>
+        </tr>
+    </table>
+
+    <h2>Tabel 2:</h2>
+    <table border="1">
+        <tr>
+            <!-- th untuk membuat header tabel (sel yang diisi bold text)-->
+            <th rowspan="2" bgcolor="blue">Bulan</th> <!-- rowspan untuk menggabungkan baris-->
+            <th colspan="2" bgcolor="#00ff80">Hasil panen</th> <!-- colspan untuk menggabungkan kolom-->
+        </tr>
+        <tr>
+            <th>Padi</th>
+            <th>Jagung</th>
+        </tr>
+        <tr>
+            <td>Januari</td>
+            <td>500 Kg</td>
+            <td>300 Kg</td> 
+        </tr>
+        <tr>
+            <td>Februari</td>
+            <td>600 Kg</td>
+            <td>400 Kg</td>
+        </tr>
+        <tr>
+            <td>Maret</td>
+            <td>450 Kg</td>
+            <td>350 Kg</td>
+        </tr>
+        <tr>
+            <td>April</td>
+            <td>700 Kg</td>
+            <td>500 Kg</td>
+        </tr>
+    </table>
+    
+    <h2>Tabel 3:</h2>
+    <table border="1">
+        <tr>
+            <th colspan="3" bgcolor="green">Produk Unggulan</th>
+        </tr>
+        <tr>
+            <td rowspan="4">
+                <img src="Images/ActionFigure.jpg" width="200">
+            </td>
+        </tr>
+        <tr>
+            <td>Nama</td>
+            <td>Action Figure Soto</td>
+        </tr>
+        <tr>
+            <td>Harga</td>
+            <td>Rp 2.150.000</td>
+        </tr>
+        <tr>
+            <td>Fitur</td>
+            <td>
+                <ul>
+                    <li>Dilengkapi Dokumentasi</li>
+                    <li>Fitur Sound Effect</li>
+                    <li>Fitur Eksposur</li>
+                    <li>Lisensi: OAW</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh video di html</title>
+</head>
+<body>
+    <h1>Contoh Video di HTML</h1>
+    <video controls> <!--<video> elemen utama untuk video. controls untuk mengaktifkan control video player-->
+        <source src="Video/cat-herd-id.webm" type="video/webm"> 
+        <!--<source> adalah elemen yang digunakan di dalam elemen <video>, 
+            <audio>, atau <picture> untuk mendefinisikan sumber media alternatif. src adalah alamat filenya-->
+        Browser anda tidak mendukung tag ini, silahkan upgrade
+    </video>
+
+    <h1>Video sebagai GIF</h1>
+    <video autoplay loop muted playsinline>
+        <!--autoplay agar video diputar otomatis. loop agar video berulang. muted agar video tidak bersuara.
+        playsinline digunakan untuk memutar video langsung di dalam halaman (inline), tanpa membuka layar penuh otomatis-->
+        <source src="Video/cat-herd-id.webm" type="video/webm">
+        <source src="Video/cat-herd-id.mp4" type="video/mp4">
+    </video>
+
+    <h1>Video Subtitles</h1>
+    <video controls>
+        <source src="Video/cat-herd-id.webm" type="video/webm">
+        <source src="Video/cat-herd-id.mp4" type="video/mp4">
+        <track src="Video/cat-herd-id.vtt" kind="subtitles" srclang="id" label="Indonesia">
+        <!--<track> adalah elemen untuk membuat subtitles. kind jenis subtitles. srclang kode bahasa.
+        label yang akan ditampilkan pada media player-->
+        <track src="Video/cat-herd-eng.vtt" kind="subtitles" srclang="eng" label="English">
+    </video>
+
+    <h1>Video dari Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ovwF3RO_jf8"></iframe>
+    <!--<iframe> tag yang diperlukan untuk menambahkan video dari youtube kesini.
+        Tag ini sebenarnya  berfungsi untuk menambahkan halaman lain dalam sebuah frame-->
+</body>
+</html>

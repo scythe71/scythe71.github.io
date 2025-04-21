@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar di HTML</title>
+</head>
+<body>
+    <h1>Menampilkan Gambar</h1>
+    <h2>Gambar sumber berkas</h2>
+    <p>Berikut adalah Gambar Langit:</p>
+    <p>
+        <!-- Gambar yang memakai sumber dari berkas .-->
+        <img src="images/Sky.jpg" alt="Gambar Sawah" width="150" height="100"/> <!-- img= untuk tampilkan gambar.-->
+        <!-- src= sumber gambar diambil. alt= alternative text yang akan ditampilkan ketika src error. 
+         width/height= ukuran gambar -->
+    </p>
+
+    <h2>Gambar sumber web</h2>
+    <p>Berikut adalah gambar luar angkasa:</p>
+    <!--Gambar yang memakai sumber dari link-->
+    <p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Webb%27s_First_Deep_Field.jpg/784px-Webb%27s_First_Deep_Field.jpg" alt="gambar angkasa" width="150" height="100"/>
+    </p>
+
+    <h2>Gambar dengan dekskripsi</h2>
+    <p>Berikut adalah gambar fires:</p>
+    <figure>
+        <!--Figure untuk mengikat gambar dengan tag captionnnya -->
+        <img src="Images/Fire.jpg" alt="Fire" width="300" height="200"/>
+        <figcaption><b>Jenis-jenis api.</b></figcaption> 
+        <!-- figcaption untuk deskripsi gambar.-->
+    </figure>
+
+    <h1>Gambar sebagai link</h1>
+    <h2>Seluruh gambar satu link</h2>
+    <p>Berikut adalah link ke website Github:</p>
+    <p>
+        <a href="https://scythe71.github.io/" target="Blank"> 
+            <!-- a adalah kode utama untuk membuat link. href sumber linknya. target="Blank" biar masuk ke tab baru-->
+            <img src="Images/ClickHere.webp" height="50" width="150"/> 
+        </a>
+    </p>
+
+    <h2>Satu gambar banyak area link</h2>
+    <p>Coba sentuh dan klik gambar ini:</p>
+    <p>
+        <img src="Images/Trio2.webp" usemap="#weebsmap">
+        <map name="weebsmap">
+            <area shape="poly" coords="256,163,277,133,308,137,317,126,340,127,351,123,347,105,353,104,342,74,341,45,350,29,375,17,398,16,418,26,424,38,427,53,416,65,462,59,450,66,455,73,431,70,419,73,416,81,439,92,451,96,457,92,478,92,453,108,436,104,417,89,417,101,421,109,416,126,435,125,451,137,480,142,491,156,482,195,443,198,444,237,473,281,462,283,469,301,451,312,476,423,406,423,380,377,357,422,290,423,311,312,286,318,307,242,307,189,276,203,262,193" title="Naruto" href="https://naruto.fandom.com/wiki/Naruto_Uzumaki" target="_blank">
+            <area shape="poly" coords="582,121,573,90,589,79,571,50,574,22,590,3,628,2,651,12,669,46,658,76,651,97,670,101,722,177,708,202,722,276,722,329,725,353,719,392,724,422,536,423,535,358,543,275,543,244,498,242,498,212,526,202,559,202,561,157,567,137" title="Sasuke" href="https://naruto.fandom.com/wiki/Sasuke_Uchiha" target="_blank">
+            <area shape="poly" coords="42,225,64,124,92,116,89,75,109,34,130,25,174,38,192,67,177,120,159,134,170,148,174,203,172,219,223,224,236,201,255,204,254,225,212,257,170,259,158,274,171,420,115,421,107,392,97,421,38,422,48,330,40,329,51,270,63,258,48,243" title="Trash" href="https://naruto.fandom.com/wiki/Sakura_Haruno" target="_blank">
+        </map>
+    </p>
+
+    
+</body>
+</html>

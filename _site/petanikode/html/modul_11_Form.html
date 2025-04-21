@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Form HTML</title>
+</head>
+<body>
+    <h2>Form Test:</h2>
+    <!--<form> untuk membuat form. action menentukan kemana data dikirim. method jenis pengiriman data-->
+    <form action="login.php" method="post"> <!--post untuk data penting atau besar-->
+        <!--fieldset> untuk membungkus bagian-bagian form dengan garis-->
+        <fieldset>
+            <!--legend> untuk memberi teks pada fieldset -->
+            <legend>Log-In</legend>
+            <p>
+                <!--label> untuk membuat label -->
+                <label>Username:</label>
+                <!--<input> untuk membuat inputan form. type jenis input. name nama yang dikirimkan ke server.
+                placeholder contoh yang akan kita inputkan di box nya. type="text" untuk teks biasa-->
+                <input type="text" name="username" placeholder="username..." />
+            </p>
+            <p>
+                <label>Password :</label>
+                <!--type="password" untuk password yaitu titik-titik -->
+                <input type="password" name="password" placeholder="password..." />
+            </p>
+            <p>
+                <!--type="checkbox" menampilkan kotak yang akan kita centang atau tidak
+                bisa untuk memberikan user pilihan yang lebih dari satu.
+                value pada tipe checkbox menentukan nilai yang dikirim ke server jika checkbox di centang.-->
+                <label><input type="checkbox" name="remember" value="remember">Remember me</label>
+            </p>
+            <p>
+                <!--type="submit" menampilkan tombol submit(tombol kirim atau login).
+                value pada tipe submit untuk menentukan teks yang tampil di tombol submit-->
+                <input type="submit" name="submit" value="Login" >
+            </p>
+        </fieldset>
+    </form>
+
+    <h2>Form contact:</h2>
+    <form action="contact.php" method="post">
+        <fieldset>
+            <legend>Contact</legend>
+            <p>
+                <label>Name:</label>
+                <input type="text" name="name" placeholder="your name...">
+            </p>
+            <p>
+                <label>Subject:</label>
+                <input type="text" name="subject" placeholder="subject...">
+            </p>
+            <p>
+                <label>Email:</label>
+                <!--type="Email" agar cuman bisa diisi dengan email.-->
+                <input type="email" name="email" placeholder="your email...">
+            </p>
+            <p>
+                <input type="submit" name="submit" value="send">
+            </p>
+        </fieldset>
+    </form>
+
+    <h2>Form Register:</h2>
+    <form action="register.php" method="post">
+        <fieldset>
+            <legend>Register</legend>
+            <p>
+                <label>Name:</label>
+                <input type="text" name="name" placeholder="your name...">
+            </p>
+            <p>
+                <label>Username:</label>
+                <input type="text" name="username" placeholder="Username...">
+            </p>
+            <p>
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="your email...">
+            </p>
+            <p>
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="password...">
+            </p>
+            <p>
+                <label>Jenis kelamin:</label>
+                <!--type="radio" menampilkan pilihan yang dipilih dan cuman bisa pilih salah satu-->
+                <label><input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki</label>
+                <label><input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan</label>
+            </p>
+            <p>
+                <label>Agama:</label>
+                <!--<select></option> untuk menampilkan pilihan salah satu dengan bentuk dropdown-->
+                <select name="agama">
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                </select>
+            </p>
+            <p>
+                <label>Biografi:</label>
+                <!--textarea untuk menginputkan text panjang-->
+                <textarea name="biografi"></textarea>
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Daftar">
+            </p>
+        </fieldset>
+    </form>
+    <h2>Form plus</h2>
+    <form action="plus.php" method="post">
+        <fieldset>
+            <legend>Form Plus:</legend>
+            <p>
+                <label>Alamat Web:</label>
+                <!--type="url" agar cuman bisa diisi dengan url.-->
+                <input type="url" name="name" placeholder="Masukkan url web...">
+            </p>
+            <p>
+                <label>Tanggal Lahir:</label>
+                <!--type="date" untuk mengisi tanggal.-->
+                <input type="date" name="tanggal">
+            </p>
+            <p>
+                <label>Umur:</label>
+                <!--type="number" agar cuman bisa diisi dengan angka.
+                min dan max untuk batas minimal dan maksimal-->
+                <input type="number" min="10" max="90" name="umur">
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Send">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

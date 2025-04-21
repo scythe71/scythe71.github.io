@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio di HTML</title>
+</head>
+<body>
+    <h1>Contoh Audio di Web</h1>
+    <audio controls>
+        <!--elemen <audio> juga memiliki atribut seperti video yaitu controls untuk pause,play,scroll,volume,stop.
+            autoplay untuk otomatis mulai audio. loop memutar ulang audio. muted untuk mensenyapkan audio-->
+        <source src="Video/lingGangGuliGuli.mp3" type="audio/mpeg">
+        Browsermu tidak mendukung tag audio, upgrade donk!
+    </audio>
+
+    <h1>Audio Sebagai Background</h1>
+    <audio hidden autoplay loop>
+        <!--atribut hidden agar audio berada di latar belakang a.k.a tersembunyi-->
+        <source src="Video/lingGangGuliGuli.mp3" type="audio/mpeg">
+        Browsermu tidak mendukung tag audio, upgrade donk!
+    </audio>
+</body>
+</html>
